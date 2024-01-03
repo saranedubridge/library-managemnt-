@@ -18,9 +18,9 @@ const [bookdata,setbookdata]=useState([])
 const getbook = () =>{
 
 
-  // const api ="https://63e0923b65b57fe60644f2ba.mockapi.io/books"
+ 
 
-  fetch("https://63e0923b65b57fe60644f2ba.mockapi.io/books",{
+  fetch("https://6594ad571493b011606abe33.mockapi.io/book",{
     method:"GET"})
 
   .then((data) => data.json() )
@@ -49,7 +49,7 @@ const getbook = () =>{
 
     }
 
-      await fetch(`https://63e0923b65b57fe60644f2ba.mockapi.io/books/${data}`,{
+      await fetch(`https://6594ad571493b011606abe33.mockapi.io/book/${data}`,{
         method: "PUT",
       body: JSON.stringify(editdata2)  ,
       headers: {
